@@ -64,12 +64,13 @@ def print_futher_instuctions(project_name: str, github: str) -> None:
         project_name: current project name
         github: GitHub username
     """
+    project_name_underscores=project_name.replace("-","_")
     message = f"""
     Your project {project_name} is created.
 
     1) Now you can start working on it:
 
-        $ cd {project_name} && git init
+        $ cd {project_name_underscores} && git init
 
     2) If you don't have Poetry installed run:
 
